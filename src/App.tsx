@@ -16,7 +16,11 @@ import './i18n/config';
 const App: React.FC = () => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [mode, setMode] = useState<'light' | 'dark'>(prefersDarkMode ? 'dark' : 'light');
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  React.useEffect(() => {
+    document.title = t('pageTitle');
+  }, [t, i18n.language]);
 
   const theme = React.useMemo(
     () =>

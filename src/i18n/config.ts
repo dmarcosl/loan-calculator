@@ -13,6 +13,7 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         appTitle: 'Loan Calculator',
+        pageTitle: 'Loan Calculator - Simulate your payments',
         appDescription: 'Simulate your loan payments with different amortization methods and payment periods. Compare options and visualize your payment schedule.',
         amount: 'Amount',
         interestRate: 'Interest Rate',
@@ -65,6 +66,7 @@ i18n.use(initReactI18next).init({
     es: {
       translation: {
         appTitle: 'Calculadora de Préstamos',
+        pageTitle: 'Calculadora de Préstamos - Simula tus pagos',
         appDescription: 'Simula los pagos de tu préstamo con diferentes métodos de amortización y períodos de pago. Compara opciones y visualiza tu calendario de pagos.',
         amount: 'Monto',
         interestRate: 'Tasa de Interés',
